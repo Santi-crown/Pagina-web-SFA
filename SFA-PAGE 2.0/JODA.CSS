@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 157, 66);
+    max-width: 1200px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.menu-btn {
+    font-size: 50px;
+    color: rgb(7, 7, 7)
+    
+}
+
+.container {
+    width: 100%;
+}
+
+.CARD1, .CARD2, .CARD3, .CARD4, .CARD5 {
+    width: 90%;
+    height: 350px;
+    transform: translateX(-471px);
+    transition: transform .5s ease-in-out;
+}
+
+
+.CARD1, .CARD2, .CARD3, .CARD4, .CARD5 {
+    display: flex;
+}
+
+ .content  {
+width: 100%;
+background: white;
+margin: 0;
+}
+
+.ARROW1, 
+.ARROW2, 
+.ARROW3, 
+.ARROW4, 
+.ARROW5 {
+    cursor: pointer;
+}
+
+.CARD1 .ARROW1, 
+.CARD2 .ARROW2, 
+.CARD3 .ARROW3, 
+.CARD4 .ARROW4, 
+.CARD5 .ARROW5 {
+display: flex;
+align-items: center;
+width: 20%;
+background: rgb(255, 255, 255);
+padding: 0;
+justify-content: center;
+
+}
+
+.CARD1 .img, 
+.CARD2 .img, 
+.CARD3 .img, 
+.CARD4 .img, 
+.CARD5 .img {
+    background: url(/pexels-karolina-grabowska-4226805.jpg) no-repeat center center/cover;
+    width: 70%;
+    height: 100px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto 100px;
+    color: white;
+    font-size: 30px;
+}
+
+/*CARD TWO*/
+
+/*SCROLL*/
+.CARD1.show, 
+.CARD2.show, 
+.CARD3.show, 
+.CARD4.show, 
+.CARD5.show {
+    transform: translateX(1px);
+}
