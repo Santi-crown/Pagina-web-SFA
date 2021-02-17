@@ -1,0 +1,300 @@
+:root {
+    --colorTextos: #ffffff96;
+}
+
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    height: 700px;
+
+
+}
+
+/* AFECTAS A LAS CLASES CONTENEDOR*/
+
+/* ELEGIR TIPO DE USUARIO */
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us {
+    width: 48%;
+    height: auto;
+    margin-right: 4%;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #b90d71;
+}
+
+
+.contenido-textos p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*TITULO*/
+.titulo {
+    color: #ad5389;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px#ad5389;
+    padding-bottom: 15px;
+}
+
+/* NAV HEADER */
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 650px;
+    background: #ad5389;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(279, 67%, 19%, 0.699), hsla(324, 35%, 50%, 0.712)), url(../PORTADA\ REGISTRO.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(279, 67%, 19%, 0.705), hsla(324, 35%, 50%, 0.705)), url(../PORTADA\ REGISTRO.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    margin-left: 10%;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-right: solid 1px rgb(255, 255, 255);
+    padding: 10px;
+    padding-right: 2%;
+}
+
+#nav-border {
+    border: none;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'EB Garamond', serif;
+}
+
+.textos-header h2 {
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* PERFILES */
+.cards .card1{
+    background: #3a7bd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    width: 39%;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    text-align: justify;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.cards .card2{
+    background: #00b09b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    width: 39%;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    text-align: justify;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.cards .card1 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card2 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card{
+    width: 85%;
+    color: #fff;
+
+}
+
+.cards .card1 > .contenido-texto-card p{
+    font-weight: 100;
+    margin: 0 40px 0 40px;
+
+}
+
+.cards .card2 > .contenido-texto-card p{
+    font-weight: 0;
+    margin: 0 40px 0 40px;
+}
+
+
+/*BOTON REGISTRO*/
+
+.registrate{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.button {
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 18px;
+    outline: none;
+    text-emphasis: none;
+}
+/*FOOTER*/
+
+.footer {
+    background: #1c0f2c;
+    color: #fff;
+}
+
+.footer-container {
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0.9;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.footer-i {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-i i {
+    flex-direction: column;
+    margin: 30px 50px 20px 50px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.content-footer p {
+    display: flex;
+    font-size: 18px;
+    font-family: "Oswald";
+    justify-content: center;
+}
