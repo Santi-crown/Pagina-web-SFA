@@ -2,6 +2,12 @@
 
 ![WhatsApp Image 2021-02-24 at 10 39 31 PM](https://user-images.githubusercontent.com/72889058/109100674-5e877c00-76f3-11eb-9597-5697b270fc28.jpeg)
 
+## LOGO
+   ![Logo EDICION MEDIANO](https://user-images.githubusercontent.com/72889058/109101242-5ed44700-76f4-11eb-9707-3d82e6a75d27.png)
+
+## NOMBRE CORPORATIVO
+
+### SOLUTION FOR ASSISTENCE (SFA)
 
 ## OBJETIVO GENERAL
 
@@ -20,3 +26,6 @@
  • Desarrollar e implementar sistemas de prevención de intrusos, garantizando así la máxima seguridad de los datos del usuario.
  
  • Actualmente no hay un sistema de base de datos oficial de acceso público que nos permita tanto a instructores como aprendices, y no solo instructores, poder acceder a esa        información. En el apartado aprendiz, el poder saber que registro lleva. No hay una plataforma oficial Sena que permita a los aprendices llevar un registro formal de sus        inasistencias y procesos disciplinarios
+## PLANTEAMIENTO DEL PROBLEMA
+
+  En la actualidad, tras la repentina y sorpresiva pandemia, no es un misterio que la deserción en el Sena se ha visto seriamente incrementada, y a su vez, también ha incrementado la postulación de personas para aprender un curso ya sea complementario, técnico, o tecnólogo. 
