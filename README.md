@@ -1,6 +1,6 @@
 # Pagina-web-SFA
 
-(https://github.com/Santi-crown/Pagina-web-SFA/blob/Rama-Roberth/imagen/sky-690293_1920.jpg)
+https://github.com/Santi-crown/Pagina-web-SFA/blob/Rama-Roberth/imagen/sky-690293_1920.jpg
 
 OBJETIVO GENERAL
 
