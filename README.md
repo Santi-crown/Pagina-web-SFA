@@ -1,3 +1,19 @@
 # Pagina-web-SFA
 
-<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+OBJETIVO GENERAL
+
+  Desarrollar un sistema que dinamice la forma de llamar a lista con el fin de hacer más fácil la toma de asistencia para los instructores mediante la creación de un sitio web     en diferentes contextos, adecuándose a las necesidades que tengan nuestros usuarios (aprendices, instructores) con la ayuda de listas inteligentes, programas académicos y       módulos.
+
+OBJETICO ESPECIFICO
+
+ • Evaluar asistencias y otros rubros, con formatos de listas inteligentes, requerimientos y especificaciones especializadas en un software diseñado exclusive para la toma de      asistencia efectiva y eficiente.
+ 
+ • Desarrollar un Software que permita bajar la tasa de desinterés por parte de los aprendices, implementado listas inteligentes que denegarán la mal toma de asistencia, e          implementar módulo de soportes de inasistencias que corregirán las deserciones mal implementadas por los instructores.
+ 
+ • Desarrollar un Software y/o plataforma que cumpla a la perfección las normas de habeas data dando seguridad a la hora de registrar datos personales.
+ 
+ • Definir un buen procedimiento de verificación de asistencia por parte del instructor.
+ 
+ • Desarrollar e implementar sistemas de prevención de intrusos, garantizando así la máxima seguridad de los datos del usuario.
+ 
+ • Actualmente no hay un sistema de base de datos oficial de acceso público que nos permita tanto a instructores como aprendices, y no solo instructores, poder acceder a esa        información. En el apartado aprendiz, el poder saber que registro lleva. No hay una plataforma oficial Sena que permita a los aprendices llevar un registro formal de sus        inasistencias y procesos disciplinarios
