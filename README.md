@@ -1,6 +1,8 @@
 # Pagina-web-SFA
 
-![sky-690293_1920](https://user-images.githubusercontent.com/72889058/109098906-2af72280-76f0-11eb-9fba-783bd9012aeb.jpg)
+
+![Logo 2 pequeño](https://user-images.githubusercontent.com/72889058/109100068-2d5a7c00-76f2-11eb-9826-5215bb3a9fa3.png)
+
 
 ## OBJETIVO GENERAL
 
