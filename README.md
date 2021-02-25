@@ -2,7 +2,7 @@
 
 https://github.com/Santi-crown/Pagina-web-SFA/blob/Rama-Roberth/imagen/sky-690293_1920.jpg
 
-https://raw.githubusercontent.com/Santi-crown/Pagina-web-SFA/blob/Rama-Roberth/imagen/sky-690293_1920.jpg
+(https://raw.githubusercontent.com/Santi-crown/Pagina-web-SFA/imagen/sky-690293_1920.jpg)
 
 
 OBJETIVO GENERAL
