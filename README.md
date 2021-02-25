@@ -1,7 +1,6 @@
 # Pagina-web-SFA
 
-
-![Logo 2 pequeño](https://user-images.githubusercontent.com/72889058/109100068-2d5a7c00-76f2-11eb-9826-5215bb3a9fa3.png)
+![WhatsApp Image 2021-02-24 at 10 39 31 PM](https://user-images.githubusercontent.com/72889058/109100674-5e877c00-76f3-11eb-9597-5697b270fc28.jpeg)
 
 
 ## OBJETIVO GENERAL
