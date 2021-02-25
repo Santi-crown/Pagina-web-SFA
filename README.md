@@ -5,11 +5,11 @@ https://github.com/Santi-crown/Pagina-web-SFA/blob/Rama-Roberth/imagen/sky-69029
 (https://raw.githubusercontent.com/Santi-crown/Pagina-web-SFA/imagen/sky-690293_1920.jpg)
 
 
-##OBJETIVO GENERAL
+## OBJETIVO GENERAL
 
   Desarrollar un sistema que dinamice la forma de llamar a lista con el fin de hacer más fácil la toma de asistencia para los instructores mediante la creación de un sitio web     en diferentes contextos, adecuándose a las necesidades que tengan nuestros usuarios (aprendices, instructores) con la ayuda de listas inteligentes, programas académicos y       módulos.
 
-##OBJETICO ESPECIFICO
+## OBJETICO ESPECIFICO
 
  • Evaluar asistencias y otros rubros, con formatos de listas inteligentes, requerimientos y especificaciones especializadas en un software diseñado exclusive para la toma de      asistencia efectiva y eficiente.
  
