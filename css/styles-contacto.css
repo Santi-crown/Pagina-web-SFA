@@ -1,0 +1,503 @@
+* {
+  color: white;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Scope One';
+  font-size: 35px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Source Sans Pro';
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+/*CONTEINER BODY-HEADER XD*/
+
+header {
+  width: 100%;
+  height: 800px;
+  background: hsla(0, 0%, 0%, 0.795);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.801), hsla(0, 0%, 0%, 0.808)),url(../img/Programadores.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(0, 0%, 26%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/Programadores.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*nav con hr*/
+nav {
+  justify-content: center;
+  text-align: center;
+  padding: 60px 50px 0 0;
+  margin: auto;
+  margin-left: 4%;
+}
+
+nav>a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 10px; 
+  border-radius: 5px; 
+  font-family: 'roboto';
+  
+}
+
+#nav-border {
+  border: none;
+}
+
+
+nav>a:hover {
+  border-radius: 5px;
+  background: blanchedalmond;
+  transition: all 0.5s ease-out;
+  text-shadow: 2px 1px 5px #f7797d;
+}
+
+
+hr{
+  top: 50px;
+  position: absolute;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background: white;
+  border-style: none;
+}
+
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nanum Gothic";
+}
+
+.textos-header h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.textos-header h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 00;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* CONTEINER BODY*/
+
+
+.Allmargin {
+  margin: 7px;
+
+}
+
+/* NAV RESPONSIVE */
+
+.nav-main2 ul {
+  display: flex;
+  display: none;
+}
+
+.nav-main2 ul li {
+  padding: 5px 10px 20px 10px;
+  margin: 20px;
+}
+
+/*Animación pseudo clase hover y after*/
+/*Animación pseudo clase hover y after*/
+.nav-main2 ul li {
+  border: none;
+  box-shadow: 0px 0px 4.5px white;
+  border-radius: 20px;
+}
+
+.nav-main2 ul li {
+  display: flex;
+  transition: background-color 0.5s;
+  border-radius: 4px;
+}
+
+.nav-main2 ul li:hover {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.248);
+}
+
+/* BOTON MENU 700*/
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 42px;
+  right: 40px;
+  /* PARA TENER ESPACIO */
+  z-index: 50;
+  display: none;
+
+}
+
+.menu-btnn {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 40px;
+  /* PARA TENER ESPACIO */
+  z-index: 50;
+  font-size: 50px;
+}
+
+
+/*PROGRAMER CARDS - ONE ++++*/
+
+.programer-cards .content,
+.programer-cardsTWO .content,
+.programer-cardsTHREE .content,
+.programer-cardsFOUR .content,
+.programer-cardsFIVE .content {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: initial;
+  border-radius: 50px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 10px black;
+  margin: 20px 5% 20px 0%;
+}
+
+.content img {
+  width: 500px;
+}
+
+.programer-cards .content {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 50px 30px;
+
+}
+
+/* SOCIAL CARDS*/
+.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 65px;
+}
+
+.social i {
+  margin: 100px auto 0 auto;
+}
+
+/*CARD TWO COLOR*/
+.programer-cardsTWO .content {
+  background: #03001e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+}
+
+/*CARD THREE COLOR*/
+.programer-cardsTHREE .content {
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*CARD FOUR COLOR*/
+.programer-cardsFOUR .content {
+  background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*CARD FIVE COLOR*/
+.programer-cardsFIVE .content {
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+/*FOOTER*/
+.footer-container {
+  width: 100%;
+  height: 200px;
+  background: black;
+  opacity: .9;
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+
+.footer-i {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-i i {
+  flex-direction: column;
+  margin: 30px 50px 20px 50px;
+  font-size: 50px;
+}
+
+.content-footer p {
+  display: flex;
+  font-size: 18px;
+  font-family: "Oswald";
+  justify-content: center;
+}
+
+
+@media (max-width: 900px) {
+
+  .programer-cards .content,
+  .programer-cardsTWO .content,
+  .programer-cardsTHREE .content,
+  .programer-cardsFOUR .content,
+  .programer-cardsFIVE .content {
+    width: auto;
+    height: 300px;
+  }
+
+  .content img {
+    width: 350px;
+    height: 300px;
+  }
+
+
+  .content h3 {
+    font-size: 25px;
+  }
+
+  .content p {
+    font-size: 21px;
+  }
+
+  .content i {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .programer-cards .content,
+  .programer-cardsTWO .content,
+  .programer-cardsTHREE .content,
+  .programer-cardsFOUR .content,
+  .programer-cardsFIVE .content {
+    width: auto;
+    height: 300px;
+  }
+
+  .content img {
+    width: 340px;
+    height: 300px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .content .social i {
+
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btnn {
+    display: none;
+  }
+
+  /* MENU ESCRITORIO SE ESCONDE*/
+  .containerNav ul.nav-menu {
+    display: none;
+  }
+
+  /* MENU SCROLL RESPONSIVE APARECE*/
+  .containerNav2 ul.nav-menu2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #09001e;
+    box-shadow: 1px 1px 10px black;
+    height: 100%;
+    padding: 30px;
+    opacity: .94;
+    transform: translateX(-500px);
+    transition: transform .5s ease-in-out;
+    font-family: 'Source Sans Pro';
+
+  }
+
+  .containerNav2 ul.nav-menu2.show {
+
+    transform: translateX(-20px);
+  }
+
+  .containerNav2 ul.nav-menu2 li {
+    display: flex;
+    padding: 20px;
+    font-size: 28px;
+    box-shadow: none;
+    font-weight: bolder;
+  }
+
+  /* body*/
+  .Programadores {}
+
+  .programer-cards .content,
+  .programer-cardsTWO .content,
+  .programer-cardsTHREE .content,
+  .programer-cardsFOUR .content,
+  .programer-cardsFIVE .content {
+    width: 90%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+
+
+  }
+
+  .content img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .content-text h3 {
+    font-size: 15px;
+  }
+
+  .content-text p {
+    font-size: 15px;
+  }
+
+  .content-text .social i {
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /*FOOTER*/
+  .footer-container i {
+    font-size: 40px;
+  }
+
+  .footer-container p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 507px) {
+  .Programadores {
+    height: 570px;
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  .content img {
+    border-radius: 10px;
+    width: 100%;
+
+    box-shadow: 0 3px 30px #000000
+  }
+
+  .programer-cards .content,
+  .programer-cardsTWO .content,
+  .programer-cardsTHREE .content,
+  .programer-cardsFOUR .content,
+  .programer-cardsFIVE .content {
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    margin: 20px auto;
+
+  }
+
+  .content-text {
+    width: 95%%;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  /*FOOTER*/
+  .footer-container i {
+    font-size: 28px;
+    margin: 30px 20px;
+  }
+
+  .footer-container p {
+    font-size: 10px;
+  }
+}
