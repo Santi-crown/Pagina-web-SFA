@@ -1,14 +1,16 @@
-const nombre = document.getElementById("name")
-const apellidos = document.getElementById("apellidos")
+const nombre1 = document.getElementById("nombre1")
+const nombre2 = document.getElementById("nombre2")
+const apellido1 = document.getElementById("apellido1")
+const apellido2 = document.getElementById("apellido2")
+const tipo_sexo = document.getElementById("tipo_sexo")
 const documento = document.getElementById("documento")
 const tipo_documento = document.getElementById("tipo_documento")
 const nacionalidad = document.getElementById("nacionalidad")
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
 const pass2  = document.getElementById("password2")
-const ficha  = document.getElementById("ficha")
-const pograma = document.getElementById("programa")
-const tel = document.getElementById("Telefono")
+const tipo_rol  = document.getElementById("tipo_rol")
+const cel = document.getElementById("celular")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
@@ -18,16 +20,28 @@ form.addEventListener("submit", e=>{
     let entrar = false
     let regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
     parrafo.innerHTML = " "
-    if(nombre.value.length <6){
-        warnings += 'Los nombres no son validos <br>'
+    if(nombre1.value.length <4){
+        warnings += 'El primer nombre no es valido <br>'
         entrar = true
     }
-    if(apellidos.value.length <6){
-        warnings += 'Los apellidos no son validos <br>'
+    if(nombre2.value.length <4){
+        warnings += 'El segundo nombre no es valido <br>'
+        entrar = true
+    }
+    if(apellido1.value.length <6){
+        warnings += 'El primer apellido no es valido <br>'
+        entrar = true
+    }
+    if(apellido2.value.length <6){
+        warnings += 'El segundo apellido no es valido <br>'
         entrar = true
     }
     if(documento.value.length <10){
-        warnings += 'Documento invalido <br>'
+        warnings += 'Numero de documento invalido <br>'
+        entrar = true
+    }
+    if(nacionalidad.value.length <6){
+        warnings += 'La nacionalidad debe tener más de 4 caracteres  <br>'
         entrar = true
     }   
     console.log(regexEmail.test(email.value))
@@ -43,18 +57,17 @@ form.addEventListener("submit", e=>{
         warnings += 'Las contraseñas no coinciden <br>'
         entrar = true
     }
-    if(ficha.value.length <7 ){
-        warnings += 'Numero de ficha invalido <br>'
+    if(tipo_rol.value.length <7 ){
+        warnings += 'Rol invalido <br>'
         entrar = true   
     }  
 
-    if(tel.value.length <7 ){
-        warnings += 'Numero telefonico invalido  <br>'
+    if(cel.value.length <7 ){
+        warnings += 'Numero celular tiene que ser mayor igual a 10 caracteres  <br>'
         entrar = true   
-    }  
+    }   
 
     if (entrar){
         parrafo.innerHTML = warnings
     }
 })
-

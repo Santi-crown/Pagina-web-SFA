@@ -23,15 +23,15 @@ option {
     text-align: center;
 }
 
-.warnings{
-    width: 250px;
+.warnings {
+    width: 400px;
     text-align: center;
-    margin: auto;
-    color: #f10b0b;
+    margin: 3px auto;
+    color: #e7a9c1;
     padding-top: 20px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-
-
+    font-weight: normal;
+    font-size: 15px;
 }
 
 /* NAV HEADER */
@@ -56,13 +56,10 @@ option {
 
 header {
     width: 100%;
-    height:2200px;
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(120, 82%, 33%, 0.747), hsla(0, 0%, 0%, 0.747)), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(120, 82%, 33%, 0.74), hsla(0, 0%, 0%, 0.74)),  url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 2100px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(192, 108, 132, 0.527), #6C5B7B, #355b7d8c), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c06c8496, #6c5b7b9a, #355b7d91), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     position: relative;
 }
@@ -138,12 +135,10 @@ h1 {
 }
 
 form {
-    background: #00b09b;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #96c93d6e, #00b09b65);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #96c93d63, #00b09b5b);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c06c848c, #6C5B7B, #355b7d8c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c06c848f, #6c5b7b80, #355b7d8e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     padding: 20px 0 40px 0;
     box-shadow: 0 0 9px 0 rgba(8, 8, 8, 0.8);
     border-radius: 10px;
@@ -179,7 +174,7 @@ form .grupo {
     width: 500px;
     max-width: 100%;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 59px auto;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, .03);
     border-radius: .3em;
@@ -194,7 +189,7 @@ form .grupo {
     background-size: .65em auto, 100%;
 }
 
-.select1{
+.select1 {
     display: block;
     font-size: 16px;
     font-family: 'Verdana', sans-serif;
@@ -237,7 +232,7 @@ input {
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--colorTextos);
-    
+
 }
 
 
@@ -248,7 +243,8 @@ input:focus {
 
 input#name.name {
     background: none;
-} 
+}
+
 /* Barras coloridas */
 label {
     color: var(--colorTextos);
@@ -265,7 +261,7 @@ input:focus~label,
 input:valid~label {
     top: -14px;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .barra {
@@ -281,20 +277,22 @@ input:valid~label {
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #283c86, #45a247);
+    background: linear-gradient(to right, #c3cffa, #ff70c8);
     transition: 0.3s ease width;
     left: 0;
 }
 
 input:focus~.barra::before {
     width: 100%;
-    
+
 }
 
 .labels-selecion {
     display: block;
-    color: white; background: rgba(255, 255, 255, 0.301);
+    color: white;
+    background: rgba(255, 255, 255, 0.301);
 }
+
 button {
     font-family: 'Roboto', sans-serif;
     background: #232526;
@@ -319,9 +317,10 @@ button {
 /*FOOTER*/
 
 .footer {
-    background: #002900;
+    background: #3d1e27;
     color: #fff;
-    margin-top: 450px;
+    margin-top: 350px;
+
 }
 
 .footer-container {
