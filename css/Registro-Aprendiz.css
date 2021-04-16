@@ -56,7 +56,7 @@ option {
 
 header {
     width: 100%;
-    height: 2100px;
+    height: 2120px;
     background: #355C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(192, 108, 132, 0.527), #6C5B7B, #355b7d8c), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #c06c8496, #6c5b7b9a, #355b7d91), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

@@ -89,7 +89,7 @@
 
                 <!--Sexo-->
                 <div class="grupo">
-                    <select name="sexo" class="select" id="tipo_sexo" name="tipo_sexo">
+                    <select class="select" id="tipo_sexo" name="tipo_sexo">
                         <!-- Opciones de la lista -->
                         <!-- Opción por defecto -->
                         <option selected style="color: black; background: rgb(197, 197, 197);">Seleccione su sexo
@@ -103,7 +103,7 @@
                     <input type="number" name="documento" id="documento" required><span class="barra"></span>
                     <label for="">Numero de documento de identidad</label>
 
-                    <select name="combo" class="select1" name="tipo_documento" id="tipo_documento" required>
+                    <select class="select1" name="tipo_documento" id="tipo_documento" required>
                         <!-- Opciones de la lista -->
                         <option value="2" selected style="color: black; background: rgb(197, 197, 197);">Seleccione un
                             tipo
