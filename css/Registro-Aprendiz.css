@@ -34,6 +34,23 @@ option {
     font-size: 15px;
 }
 
+.error {
+    background: #ff918575;
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(138, 0, 0);
+    backdrop-filter: blur(30px);
+    list-style: upper-latin;
+}
+
+.correcto {
+    background: #89ff85;
+    font-size: 12px;
+    padding: 10px;
+    color: rgb(23, 138, 0);
+
+}
+
 /* NAV HEADER */
 .contenedor {
     padding: 60px 0;
@@ -314,6 +331,34 @@ button {
     font-size: 18px;
 }
 
+/*ESTILO CONEXION BASE DE DATOS*/
+.ok {
+    position: absolute;
+    top: 1890px;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    background-color: #4e8;
+    color: #fff;
+    left: 30%;
+    font-size: 15px;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.bad {
+    position: absolute;
+    top: 500px; 
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    background-color: #a22;
+    color: #fff;
+    left: 100px;
+    font-size: 15px;
+    border-radius: 30px;
+}
 /*FOOTER*/
 
 .footer {

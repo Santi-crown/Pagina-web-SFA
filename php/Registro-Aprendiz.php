@@ -53,8 +53,6 @@
         <!--<div class="bandera-margin">
             <img src="../img/Bandera Aprendiz.svg" alt="" class="bandera">
         </div> -->
-
-
         <!-- CUERPO REGISTRO APRENDIZ -->
         <form method="POST" id="form" autocomplete="off">
             <div class="form">
@@ -66,24 +64,24 @@
 
                 <!--Nombres 1-->
                 <div class="grupo">
-                    <input type="text" name="nombre1" id="nombre1" class="name" required><span class="barra"></span>
+                    <input type="text" name="nombre1" id="nombre1" class="name" ><span class="barra"></span>
                     <label for="">Primer nombre</label>
                 </div>
                 <!--Nombres 2-->
                 <div class="grupo">
-                    <input type="text" name="nombre2" id="nombre2" class="name" required><span class="barra"></span>
+                    <input type="text" name="nombre2" id="nombre2" class="name" ><span class="barra"></span>
                     <label for="">Segundo nombre</label>
                 </div>
 
                 <!--Apellido 1-->
                 <div class="grupo">
-                    <input type="text" name="apellido1" id="apellido1" required><span class="barra"></span>
+                    <input type="text" name="apellido1" id="apellido1" ><span class="barra"></span>
                     <label for="">Primer apellido</label>
                 </div>
 
                 <!--Apellido 2-->
                 <div class="grupo">
-                    <input type="text" name="apellido2" id="apellido2" required><span class="barra"></span>
+                    <input type="text" name="apellido2" id="apellido2" ><span class="barra"></span>
                     <label for="">Segundo apellido</label>
                 </div>
 
@@ -123,7 +121,7 @@
 
                 <!--INPUT CORREO-->
                 <div class="grupo">
-                    <input type="email" name="email" id="email" required><span class="barra"></span>
+                    <input type="email" name="email" id="email" ><span class="barra"></span>
                     <label for="">Correo electrónico</label>
                 </div>
 
@@ -154,9 +152,105 @@
                     <input type="number" name="celular" id="celular" required><span class="barra"></span>
                     <label for="">Numero celular</label>
                 </div>                
-                <button type="submit">Registrate</button>
+                <button type="submit" name="register" >Registrate</button>
                 <p class="warnings" id="warnings"></p>
             </div>
+            <?php
+//Conexion con bases de datos
+include("con_bd.php");
+
+if (isset($_POST['register'])) {
+    if (
+        strlen($_POST['nombre1']) >= 1 && strlen($_POST['nombre2']) >=  1 &&
+        strlen($_POST['apellido1']) >= 1 && strlen($_POST['apellido2']) >=  1 &&
+        strlen($_POST['tipo_sexo']) >= 1 && strlen($_POST['documento']) >=  1 &&
+        strlen($_POST['tipo_documento']) >= 1 && strlen($_POST['nacionalidad']) >=  1 &&
+        strlen($_POST['email']) >= 1 && strlen($_POST['password']) >=  1 &&
+        strlen($_POST['password2']) >= 1 && strlen($_POST['tipo_rol']) >=  1 &&
+        strlen($_POST['celular']) >= 1) {
+        $nombre1 = trim($_POST['nombre1']);
+        $nombre2 = trim($_POST['nombre2']);
+        $apellido1 = trim($_POST['apellido1']);
+        $apellido2 = trim($_POST['apellido2']);
+        $tipo_sexo = trim($_POST['tipo_sexo']);
+        $documento = trim($_POST['documento']);
+        $tipo_documento = trim($_POST['tipo_documento']);
+        $nacionalidad = trim($_POST['nacionalidad']);
+        $email = trim($_POST['email']);
+        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $password2 = password_hash($_POST['password2'], PASSWORD_BCRYPT);
+        $tipo_rol = trim($_POST['tipo_rol']);
+        $celular = trim($_POST['celular']);
+        $fechareg = date("d/m/y");
+
+                
+        $campos = array();
+        if ($nombre1 == "" || strlen($nombre1) < 4) {
+            array_push($campos, "El primer nombre debe tener minimo cuatro caracteres.");
+        }
+        if ($nombre2 == "" || strlen($nombre2) < 4) {
+            array_push($campos, "El segundo nombre debe tener minimo cuatro caracteres.");
+        }
+        if ($apellido1 == "" || strlen($apellido1) < 4) {
+            array_push($campos, "El primer apellido debe tener minimo cuatro caracteres.");
+        }
+        if ($apellido2 == "" || strlen($apellido2) < 4) {
+            array_push($campos, "El segundo apellido debe tener minimo cuatro caracteres.");
+        }
+        if ($documento == "" || strlen($documento) < 10) {
+            array_push($campos, "El numero de documeno de indentidad debe tener 10 numeros.");
+        }
+        if ($nacionalidad == "" || strlen($nacionalidad) < 4) {
+            array_push($campos, "El campo nacionlidad debe tener minimo 4 caracteres.");
+        }
+        if ($password == "" || strlen($password) < 6) {
+            array_push($campos, "La contraseña debetener minimo seis caracteres");
+        }
+        if ($_POST["password"] !== $_POST["password2"]) {
+            array_push($campos, "Las contraseñas no coiciden");
+        } 
+
+        
+        if ($email == "" || strpos($email, "@") === false) {
+            array_push($campos, "Ingresa un correo electrónico valido");
+        }
+        
+        if ($celular == "" || strlen($celular) < 10) {
+            array_push($campos, "El numero celular debe tener 10 caracteres");
+        }
+        if (count($campos) > 0) {
+            echo "<div class='error'>";
+            for ($i = 0; $i < count($campos); $i++) {
+                echo "<li>" . $campos[$i] . "</i>";
+            }
+            echo "</div>";
+        } else {
+            $consulta = "INSERT INTO usuarios(nombre1, nombre2, apellido1, apellido2, tipo_sexo, documento,tipo_documento, nacionalidad, email, password, password2,tipo_rol, celular, fecha_reg) VALUES ('$nombre1','$nombre2','$apellido1','$apellido2','$tipo_sexo','$documento','$tipo_documento','$nacionalidad','$email','$password','$password2','$tipo_rol','$celular','$fechareg')";
+            $resultado = mysqli_query($conex, $consulta);
+            echo "<div class='correcto'>Datos correctos</div>";
+        
+        if ($resultado) {
+        ?>
+            <h3 class="ok">Te has registrado correctamente</h3>
+            
+        <?php
+        } else {
+        ?>
+            <h3 class="bad">¡Por favor complete los campos!</h3>
+        <?php
+            echo "</div>";
+        }
+    } 
+        ?>
+
+<?php
+    }
+    /*-------------------------------------------------------- */
+}
+
+
+?>
+        
         </form>
         <!--FOOTER-->
         <section class="footer">
@@ -187,6 +281,9 @@
                 </div>
             </footer>
         </section>
-        <script src="../js/Registro-Aprendiz.js "></script>
+        <!--<script src="../js/Registro-Aprendiz.js "></script>-->
+        <?php
+    //include("registrar.php");
+    ?>
 </body>
 </html>
