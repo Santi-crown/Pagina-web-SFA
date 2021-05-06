@@ -1,50 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-}   
-
-body{
-    font-family: 'Open Sans', sans-serif;   
 }
 
-.contenedor{
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+}
+
+.contenedor {
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
-.titulo{
-    color: #f10b7e ;
+.titulo {
+    color: #f18d0b;
     font-size: 35px;
     text-align: center;
-    margin-bottom: 60px;
-    border-bottom: solid 1px#f10b7e;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-bottom: solid 1px#f1a80b;
     padding-bottom: 15px;
 }
 
 /* Header */
 
-header{
-    width: 100%; 
-    height: 1100px;
-    background: #e60073e3;  
+header {
+    width: 100%;
+    height: 980px;
+
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(240, 50%, 40%, 0.63), hsla(312, 100%, 50%, 0.603)), url(../img/portada.jpg);  
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.288), hsla(0, 0%, 0%, 0.322)), url(../img/portada.jpg);
+    ;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(240, 50%, 40%, 0.63), hsla(312, 100%, 50%, 0.603)), url(../img/portada.jpg); 
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.829)), url(../img/portada.jpg);
+    ;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
+#Logo {
+    width: 350px;
+    height: 350px;
+    margin-top: 200px;
 
+}
 
-header .textos-header{
+.listas-inteligentes {
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #472a038c, #DBDBDB, #f2f2f2a6, #ada9969d), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaeaeaa2, #DBDBDB, #f2f2f2a9, #ADA996), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(100px);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+header .textos-header {
     display: flex;
     height: 430px;
     width: 100%;
@@ -58,41 +81,52 @@ header .textos-header{
     font-size: 60px;
     color: #fff;
     margin-bottom: 15px;
+    background: -webkit-linear-gradient(rgb(248, 228, 47), rgb(253, 71, 71));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
 }
 
 .textos-header h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 200;
     color: #fff;
 }
-.wave{
+
+.wave {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 /* About us*/
-.contenedor-sobre-nosotros{
+.contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
 }
 
-.imagen-about-us{
+.imagen-about-us {
     width: 48%;
     height: auto;
     margin-right: 4%;
 }
 
-.sobre-nosotros .contenido-textos{
+.sobre-nosotros .contenido-textos {
     width: 48%;
 }
 
-.contenido-textos h3{
+.contenido-textos h3 {
     margin-bottom: 15px;
 }
 
-.contenido-textos h3 span{
-    background: #e60073;
+.contenido-textos h3 span {
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -104,7 +138,7 @@ header .textos-header{
     margin-right: 6px;
 }
 
-.contenido-textos p{
+.contenido-textos p {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
@@ -112,17 +146,17 @@ header .textos-header{
 
 /* Galeria*/
 
-.portafolio{
+.portafolio {
     background: #f2f2f2;
 }
 
-.galeria-port{
+.galeria-port {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.imagen-port{
+.imagen-port {
     width: 24%;
     height: 450px;
     margin-bottom: 10px;
@@ -132,14 +166,14 @@ header .textos-header{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 
-.imagen-port > img{
+.imagen-port>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.hover-galeria{
+.hover-galeria {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -155,33 +189,40 @@ header .textos-header{
 }
 
 /* Texto listas inteligentes */
-
-.contenedor .texto-galeria{
+.blur{
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+.contenedor .texto-galeria {
     align-items: center;
     margin-top: 6%;
     line-height: 30px;
     font-size: 19px;
+    color: black;
 }
 
 /*COLOR PAGINA ICONO*/
-.hover-galeria i{
+.hover-galeria i {
     font-size: 100px;
     margin-bottom: 20px;
 }
 
-.imagen-port:hover .hover-galeria{
+.imagen-port:hover .hover-galeria {
     transform: scale(1);
 }
 
 /* Clientes */
 
-.cards{
+.cards {
     display: flex;
     justify-content: space-evenly;
 }
 
-.cards .card{
-    background: #970850;
+.cards .card {
+    background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     width: 46%;
     height: 500px;
@@ -197,7 +238,7 @@ header .textos-header{
     font-size: 25px;
 }
 
-.cards .card img{
+.cards .card img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -206,26 +247,26 @@ header .textos-header{
     display: block;
 }
 
-.cards .card > .contenido-texto-card{
+.cards .card>.contenido-texto-card {
     width: 85%;
     color: #fff;
     font-size: 16px;
 }
 
-.cards .card > .contenido-texto-card p{
+.cards .card>.contenido-texto-card p {
     font-weight: 100;
     margin: 10px;
 }
 
 /* Our team */
 
-.about-services{
+.about-services {
     background: #f2f2f2;
     padding-bottom: 30px;
 }
 
-.servicios-cont{
-    display:flex;
+.servicios-cont {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -235,25 +276,28 @@ header .textos-header{
     text-align: center;
 }
 
-.servicio-ind img{
+.servicio-ind img {
     width: 90%;
 }
 
-.servicio-ind h3{
+.servicio-ind h3 {
     margin: 10px 0;
+    color: coral;
 }
 
-.servicio-ind p{
+.servicio-ind p {
     font-weight: 300;
     text-align: justify;
+    color: black;
 }
 
-  /*FOOTER*/
+/*FOOTER*/
 
-.footer{
-      background: #6d0137   ;
-      color: #fff;
-  }
+.footer {
+    background: #8f3400;
+    color: #fff;
+}
+
 .footer-container {
     width: 100%;
     height: 150px;
@@ -262,23 +306,24 @@ header .textos-header{
     flex-direction: column;
     box-sizing: border-box;
 }
-  
-  .footer-i {
+
+.footer-i {
     display: flex;
     justify-content: center;
-  }
-  
-  .footer-i i {
+}
+
+.footer-i i {
     flex-direction: column;
     margin: 30px 50px 20px 50px;
     font-size: 50px;
     color: #fff;
-  }
-  
-  .content-footer p {
+}
+
+.content-footer p {
     display: flex;
     font-size: 18px;
     font-family: "Oswald";
     justify-content: center;
-  }
-  /**/
+}
+
+/**/

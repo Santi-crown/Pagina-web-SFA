@@ -1,6 +1,6 @@
-<?php
+<!--<?php
 //Conexion con bases de datos
-include("con_bd.php");
+//include("con_bd.php");
 
 if (isset($_POST['register'])) {
     if (
@@ -54,7 +54,7 @@ if (isset($_POST['register'])) {
         } else {
             $consulta = "INSERT INTO usuarios(nombre1, nombre2, apellido1, apellido2, tipo_sexo, documento,tipo_documento, nacionalidad, email, password, password2,tipo_rol, celular, fecha_reg) VALUES ('$nombre1','$nombre2','$apellido1','$apellido2','$tipo_sexo','$documento','$tipo_documento','$nacionalidad','$email','$password','$password2','$tipo_rol','$celular','$fechareg')";
             $resultado = mysqli_query($conex, $consulta);
-            
+            echo "<div class='correcto'>Datos correctos";
         
         if ($resultado) {
         ?>
@@ -71,7 +71,7 @@ if (isset($_POST['register'])) {
 
 <?php
     }
-    /*-------------------------------------------------------- */
+    
 }
 }
 

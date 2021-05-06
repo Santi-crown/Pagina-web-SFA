@@ -155,7 +155,6 @@ form {
     background: #355C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #c06c848c, #6C5B7B, #355b7d8c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #c06c848f, #6c5b7b80, #355b7d8e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
     padding: 20px 0 40px 0;
     box-shadow: 0 0 9px 0 rgba(8, 8, 8, 0.8);
     border-radius: 10px;
