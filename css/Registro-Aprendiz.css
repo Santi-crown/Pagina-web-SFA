@@ -74,9 +74,12 @@ option {
 header {
     width: 100%;
     height: 2120px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(192, 108, 132, 0.527), #6C5B7B, #355b7d8c), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c06c8496, #6c5b7b9a, #355b7d91), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #355C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(192, 108, 132, 0.527), #6C5B7B, #355b7d8c), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c06c8496, #6c5b7b9a, #355b7d91), url(../img/IMAGEN\ PORTADA\ APRENDIZ.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     position: relative;
 }
@@ -152,9 +155,13 @@ h1 {
 }
 
 form {
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c06c848c, #6C5B7B, #355b7d8c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c06c848f, #6c5b7b80, #355b7d8e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: hsla(13, 97%, 55%, 0.753);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(40, 92%, 58%, 0.753), hsla(13, 97%, 55%, 0.712));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(40, 92%, 58%, 0.795), hsla(13, 97%, 55%, 0.774));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px 0 40px 0;
     box-shadow: 0 0 9px 0 rgba(8, 8, 8, 0.8);
     border-radius: 10px;
@@ -348,7 +355,7 @@ button {
 
 .bad {
     position: absolute;
-    top: 500px; 
+    top: 500px;
     text-align: center;
     width: 30%;
     padding: 10px;
@@ -358,6 +365,7 @@ button {
     font-size: 15px;
     border-radius: 30px;
 }
+
 /*FOOTER*/
 
 .footer {
