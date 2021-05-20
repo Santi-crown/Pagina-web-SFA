@@ -1,4 +1,4 @@
-# Pagina-web-SFA
+# Pagina web Scientus
 
 ![WhatsApp Image 2021-02-24 at 10 39 31 PM](https://user-images.githubusercontent.com/72889058/109100674-5e877c00-76f3-11eb-9597-5697b270fc28.jpeg)
 
@@ -7,9 +7,14 @@
 
 ## NOMBRE CORPORATIVO
 
-### SOLUTION FOR ASSISTENCE (SFA)
+### Scientus
+
+## Eslogan 
+
+###Por cada minuto dedicado a la organización, se gana una hora para tu organización.
 
 ## OBJETIVO GENERAL
+
 
   Desarrollar un sistema que dinamice la forma de llamar a lista con el fin de hacer más fácil la toma de asistencia para los instructores mediante la creación de un sitio web     en diferentes contextos, adecuándose a las necesidades que tengan nuestros usuarios (aprendices, instructores) con la ayuda de listas inteligentes, programas académicos y       módulos.
 
