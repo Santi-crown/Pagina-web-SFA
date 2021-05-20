@@ -227,7 +227,7 @@ if (isset($_POST['register'])) {
             }
             echo "</div>";
         } else {
-            $consulta = "INSERT INTO usuarios(nombre1, nombre2, apellido1, apellido2, tipo_sexo, documento,tipo_documento, nacionalidad, email, password, password2,tipo_rol, celular, fecha_reg) VALUES ('$nombre1','$nombre2','$apellido1','$apellido2','$tipo_sexo','$documento','$tipo_documento','$nacionalidad','$email','$password','$password2','$tipo_rol','$celular','$fechareg')";
+            $consulta = "INSERT INTO registro(nombre1, nombre2, apellido1, apellido2, tipo_sexo, documento, tipo_documento, nacionalidad, email, password, password2, tipo_rol, celular, fecha_reg) VALUES ('$nombre1','$nombre2','$apellido1','$apellido2','$tipo_sexo','$documento','$tipo_documento','$nacionalidad','$email','$password','$password2','$tipo_rol','$celular','$fechareg')";
             $resultado = mysqli_query($conex, $consulta);
             echo "<div class='correcto'>Datos correctos</div>";
         
@@ -277,7 +277,7 @@ if (isset($_POST['register'])) {
                                 </a>
                             </li>
                         </ul>
-                        <p class="footer__Copyright">Copyright © 2020 by Solution For Assistance. (SFA)
+                        <p class="footer__Copyright">Copyright © 2020 by Scientus. (SCT)
                         </p>
                     </div>
                 </div>
